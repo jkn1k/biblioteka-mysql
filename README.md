@@ -27,14 +27,6 @@ Otwórz terminal lub wiersz poleceń.
 
 Przejdź do folderu, w którym znajdują się pliki.
 
-Zainicjuj repozytorium Git
-(podpowiedz ode mnie, kolejno
-git init
-git add <pliki>
-git commit -m <"Twoja nazwa commita">
-git remote add origin <nazwa_repo>
-git push -u origin master)
-
 4: Sprawdź repozytorium
 Przejdź do swojego repozytorium na GitHubie, aby upewnić się, że pliki są poprawnie umieszczone.
 Sprawdź zawartość plików, aby upewnić się, że wszystkie zapytania SQL oraz opis zadania są wyświetlane prawidłowo.
