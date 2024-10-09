@@ -6,7 +6,7 @@ CREATE TABLE ksiazki (
     id INT AUTO_INCREMENT PRIMARY KEY,
     tytul VARCHAR(255) NOT NULL,
     autor VARCHAR(255) NOT NULL,
-    rok_wydania INT NOT NULL,
+    rok_wydania YEAR NOT NULL,
     cena DECIMAL(10, 2) NOT NULL
 );
 
@@ -17,8 +17,8 @@ ADD COLUMN opis TEXT;
 
 CREATE TABLE czytelnicy (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    imie VARCHAR(100) NOT NULL,
-    nazwisko VARCHAR(100) NOT NULL,
+    imie VARCHAR(100),
+    nazwisko VARCHAR(100),
     data_rejestracji DATE
 );
 
