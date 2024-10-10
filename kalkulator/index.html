@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    h1, h2 {
+        color: #333;
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 20%
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input, select {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 95%;
+    }
+    button {
+        padding: 10px 15px;
+        background-color: #59c5d8;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #223e97;
+    }
+</style>
+</head>
+<body>
+    <h1>Kalkulator</h1>
+    <form id="calculator">
+        <label for="liczba1">Pierwsza liczba:</label>
+        <input type="number" id="liczba1" required><br>
+    
+        <label for="liczba2">Druga liczba:</label>
+        <input type="number" id="liczba2" required><br>
+    
+        <label for="operacja">Wybierz operację:</label>
+        <select id="operacja" required>
+            <option value="dodawanie">Dodawanie</option>
+            <option value="odejmowanie">Odejmowanie</option>
+            <option value="mnozenie">Mnożenie</option>
+            <option value="dzielenie">Dzielenie</option>
+        </select><br>
+    
+        <button type="submit">Oblicz</button>
+    </form>
+    
+    <h2 id="wynik"></h2>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
