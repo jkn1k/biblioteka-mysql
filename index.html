@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteka - Formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Biblioteka - Formularze</h1>
+    <h2>Dodaj czytelnika</h2>
+    <form action="czytelnik.php" method="post">
+        
+        <label for="imie">Imię:</label>
+        <input type="text" id="imie" name="imie" required>
+
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" id="nazwisko" name="nazwisko" required>
+
+        <button type="submit">Dodaj czytelnika</button>
+    </form>
+    <h2>Dodaj wypożyczenie</h2>
+    <form action="wypozyczenia.php" method="post">
+        <label for="czytelnik_id">Czytelnik:</label>
+        <input type="text" id="czytelnik_id" name="czytelnik_id" placeholder="Wprowadź imię i nazwisko czytelnika" required>
+
+        <label for="tytul">Tytuł książki:</label>
+        <input type="text" id="tytul" name="tytul" placeholder="Wprowadź tytuł książki" required>
+
+        <label for="data_wypozyczenia">Data wypożyczenia:</label>
+        <input type="date" id="data_wypozyczenia" name="data_wypozyczenia" required>
+
+        <label for="data_zwrotu">Planowana data zwrotu:</label>
+        <input type="date" id="data_zwrotu" name="data_zwrotu" required>
+
+        <button type="submit">Dodaj wypożyczenie</button>
+    </form>
+
+</body>
+</html>
