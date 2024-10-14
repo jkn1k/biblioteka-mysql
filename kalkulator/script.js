@@ -24,6 +24,8 @@ document.getElementById('calculator').addEventListener('submit', function(event)
             } else {
                 wynik = 'Nie można dzielić przez zero!';
             }
+            default:
+                wynik = "Nieprawidłowa operacja"
     }
     
 
