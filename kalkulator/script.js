@@ -24,10 +24,12 @@ document.getElementById('calculator').addEventListener('submit', function(event)
             } else {
                 wynik = 'Nie można dzielić przez zero!';
             }
+            break;
             default:
-                wynik = "Nieprawidłowa operacja"
+                wynik = "Nieprawidłowa operacja";
+                break;
     }
     
 
-    document.getElementById('wynik').innerText = `${wynik}`;
+    document.getElementById('wynik').innerText = wynik;
 })
