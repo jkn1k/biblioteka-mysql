@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odwrócony string</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    h1, h2 {
+        color: #333;
+    }
+    form {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 20%
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input, select {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 95%;
+    }
+    button {
+        padding: 10px 15px;
+        background-color: #59c5d8;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #223e97;
+    }
+</style>
+</head>
+<body>
+    <h1>Odwrócony string</h1>
+    <form id="reverse-string">
+        <input type="text" id="string" required placeholder="Podaj wyraz lub ciąg znaków"><br>
+        <button type="submit">Wykonaj</button>
+    </form>
+
+    <h2><span id="wynik"></span></h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>
