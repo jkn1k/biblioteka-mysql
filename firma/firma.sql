@@ -34,3 +34,12 @@ CREATE TABLE dzialy (
     nazwa VARCHAR(50),
     id_kierownika INT
 );
+
+INSERT INTO dzialy (nazwa, id_kierownika) VALUES
+('Dział IT', 1),
+('Dział HR', 4),
+('Dział Marketingu', 5);
+
+SELECT pracownicy.imie, pracownicy.nazwisko, dzialy.nazwa AS nazwa_dzialu
+FROM pracownicy
+JOIN dzialy ON pracownicy.id = dzialy.id_kierownika;
