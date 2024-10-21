@@ -51,6 +51,6 @@ UPDATE nauczyciele SET nazwisko = 'Nowak' WHERE id = 3;
 
 DELETE FROM nauczyciele WHERE id = 1;
 
-SELECT u.imie AS imie_ucznia, u.nazwisko AS nazwisko_ucznia, u.klasa, n.imie AS imie_nauczyciela, n.nazwisko AS nazwisko_nauczyciela, n.przedmiot
-FROM uczniowie
-JOIN nauczyciele ON u.klasa = n.klasa;
+SELECT u.imie AS imie_ucznia, u.nazwisko AS nazwisko_ucznia, u.klasa, n.imie AS imie_nauczyciela, n.nazwisko AS nazwisko_nauczyciela
+FROM uczniowie u
+JOIN nauczyciele ON SUBSTRING(u.klasa, 1, 3) = SUBSTRING(n.klasa, 1, 3);
