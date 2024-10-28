@@ -21,17 +21,21 @@ SELECT U.imie, U.nazwisko, O.ocena
 FROM Uczniowie U
 LEFT JOIN Oceny O ON U.id_ucznia = O.id_ucznia;
 
-SELECT O.ocena, U.imie, U.nazwisko
-FROM Uczniowie U
-RIGHT JOIN Oceny O ON U.id_ucznia = O.id_ucznia;
+SELECT U.imie, U.nazwisko, O.ocena
+FROM Oceny O
+RIGHT JOIN Uczniowie U ON O.id_ucznia = U.id_ucznia
+WHERE O.id_ucznia IS NOT NULL;
 
-SELECT U.imie, U.nazwisko, O.ocena 
+SELECT U.imie, U.nazwisko, O.ocena
 FROM Uczniowie U
 LEFT JOIN Oceny O ON U.id_ucznia = O.id_ucznia
-UNION
-SELECT U.imie, U.nazwisko, O.ocena 
-FROM Uczniowie U
-RIGHT JOIN Oceny O ON U.id_ucznia = O.id_ucznia;
+
+UNION ALL
+
+SELECT U.imie, U.nazwisko, O.ocena
+FROM Oceny O
+LEFT JOIN Uczniowie U ON O.id_ucznia = U.id_ucznia
+WHERE U.id_ucznia IS NULL;
 
 SELECT U.imie, U.nazwisko, O.ocena 
 FROM Uczniowie U
